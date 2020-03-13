@@ -1,0 +1,9 @@
+-   id: 'golangci-lint'
+    name: 'golangci-lint'
+    entry: run-golangci-lint.sh
+    types: [go]
+    exclude: '(^|/)vendor/'
+    language: 'script'
+    description: "Runs `golangci-lint` on all go files in the folder which has `go.mod`, requires golangci-lint"
+    pass_filenames: true
+    require_serial: true
